@@ -26,15 +26,7 @@ public class Programmer extends Employee{
 
     
     public void coding(char str){
-        if(getEnergy() >= 30){
-            System.out.println("Your code is "+str);
-            setEnergy(getEnergy() - 30);
-            setHappiness(getHappiness() - 30);
-        }
-        else{
-            System.out.println("Error Error Error");
-            setEnergy(getEnergy() - 30);
-            setHappiness(getHappiness() - 30);
-        }
+        String tostr = Character.toString(str);
+        coding(tostr);
     }
 }
