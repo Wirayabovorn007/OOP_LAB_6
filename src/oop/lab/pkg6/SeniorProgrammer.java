@@ -19,6 +19,19 @@ public class SeniorProgrammer extends Programmer{
             setHappiness(getHappiness() - 5);
         }
     }
+
+    public void coding(char str){
+        if(getEnergy()>=10){
+            System.out.println("I'm coding about "+str);
+            setEnergy(getEnergy() - 5);
+            setHappiness(getHappiness() - 5);
+        }
+        else{
+            System.out.println("ZzZzZz");
+            setEnergy(getEnergy() - 5);
+            setHappiness(getHappiness() - 5);
+        }
+    }
     public void coding(String str, int num){
         for(int i = 0; i < num; i++){
             if(getEnergy()>=10){

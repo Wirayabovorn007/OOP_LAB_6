@@ -38,7 +38,7 @@ public class Employee {
         return false;
     }
     public void eat(Food f){
-        this.energy+=f.getEnergy();
+        this.energy+=Food.getEnergy();
     }
     public boolean equals(Employee e){
         return this.name.equals(e.name);

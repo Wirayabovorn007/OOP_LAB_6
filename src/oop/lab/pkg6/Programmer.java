@@ -10,6 +10,7 @@ public class Programmer extends Employee{
         this.happiness = happiness;
     }
 
+
     public void coding(String str){
         if(getEnergy() >= 30){
             System.out.println("Your code is "+str);
@@ -22,6 +23,8 @@ public class Programmer extends Employee{
             setHappiness(getHappiness() - 30);
         }
     }
+
+    
     public void coding(char str){
         if(getEnergy() >= 30){
             System.out.println("Your code is "+str);
